@@ -17,7 +17,7 @@
     "build:mp-lark": "cross-env NODE_ENV=production UNI_PLATFORM=mp-lark vue-cli-service uni-build",
     "build:mp-qq": "cross-env NODE_ENV=production UNI_PLATFORM=mp-qq vue-cli-service uni-build",
     "build:mp-toutiao": "cross-env NODE_ENV=production UNI_PLATFORM=mp-toutiao vue-cli-service uni-build",
-    "build:mp-weixin": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "build:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode production",
     "build:mp-xhs": "cross-env NODE_ENV=production UNI_PLATFORM=mp-xhs vue-cli-service uni-build",
     "build:quickapp-native": "cross-env NODE_ENV=production UNI_PLATFORM=quickapp-native vue-cli-service uni-build",
     "build:quickapp-webview": "cross-env NODE_ENV=production UNI_PLATFORM=quickapp-webview vue-cli-service uni-build",
@@ -35,7 +35,7 @@
     "dev:mp-lark": "cross-env NODE_ENV=development UNI_PLATFORM=mp-lark vue-cli-service uni-build --watch",
     "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
     "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
-    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode development --watch",
     "dev:mp-xhs": "cross-env NODE_ENV=development UNI_PLATFORM=mp-xhs vue-cli-service uni-build --watch",
     "dev:quickapp-native": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-native vue-cli-service uni-build --watch",
     "dev:quickapp-webview": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-webview vue-cli-service uni-build --watch",
@@ -47,7 +47,8 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "preview:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode preview"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.2-4070620250821001",

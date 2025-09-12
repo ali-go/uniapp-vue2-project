@@ -4139,7 +4139,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001741
-      electron-to-chromium: 1.5.217
+      electron-to-chromium: 1.5.218
       node-releases: 2.0.20
       update-browserslist-db: 1.1.3_browserslist@4.25.4
 
@@ -5742,8 +5742,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /electron-to-chromium/1.5.217:
-    resolution: {integrity: sha512-Pludfu5iBxp9XzNl0qq2G87hdD17ZV7h5T4n6rQXDi3nCyloBV3jreE9+8GC6g4X/5yxqVgXEURpcLtM0WS4jA==}
+  /electron-to-chromium/1.5.218:
+    resolution: {integrity: sha512-uwwdN0TUHs8u6iRgN8vKeWZMRll4gBkz+QMqdS7DDe49uiK68/UX92lFb61oiFPrpYZNeZIqa4bA7O6Aiasnzg==}
 
   /elliptic/6.6.1:
     resolution: {integrity: sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==}
@@ -8481,7 +8481,7 @@ packages:
       escape-html: 1.0.3
       fresh: 0.5.2
       http-assert: 1.5.0
-      http-errors: 1.6.3
+      http-errors: 1.8.1
       is-generator-function: 1.1.0
       koa-compose: 4.1.0
       koa-convert: 2.0.0
@@ -9136,7 +9136,7 @@ packages:
     dependencies:
       debug: 3.2.7
       iconv-lite: 0.4.24
-      sax: 1.2.4
+      sax: 1.4.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10874,6 +10874,10 @@ packages:
 
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: true
+
+  /sax/1.4.1:
+    resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
     dev: true
 
   /saxes/3.1.11:
@@ -12933,7 +12937,7 @@ packages:
     resolution: {integrity: sha512-drPFnkQJik/O+uPKpqSgr22mpuFHqKdbS835iAQrUC73L2F5WkboIRd63ai/2Yg6I1jzifPFKH2NTK+cfglkIA==}
     engines: {node: '>=4.0.0'}
     dependencies:
-      sax: 1.2.4
+      sax: 1.4.1
       xmlbuilder: 11.0.1
     dev: true
 

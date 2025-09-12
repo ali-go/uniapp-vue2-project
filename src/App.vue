@@ -2,6 +2,9 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			console.log('env', process.env.NODE_ENV)
+			console.log('url', process.env.VUE_APP_BASE_URL)
+			console.log('url', process.env)
 		},
 		onShow: function() {
 			console.log('App Show1')
