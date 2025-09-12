@@ -47,8 +47,9 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
-    "preview:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode preview"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode test",
+    "preview:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode preview",
+    "lint": "vue-cli-service lint src --ext .js,.vue"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.2-4070620250821001",
@@ -91,13 +92,20 @@
     "@dcloudio/webpack-uni-mp-loader": "^2.0.2-4070620250821001",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.2-4070620250821001",
     "@vue/cli-plugin-babel": "~4.5.14",
+    "@vue/cli-plugin-eslint": "~4.5.14",
     "@vue/cli-service": "~4.5.14",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
     "jest": "^25.4.0",
     "less": "4.1.1",
     "less-loader": "5.0.0",
     "postcss-comment": "^2.0.0",
+    "prettier": "^2.2.1",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
