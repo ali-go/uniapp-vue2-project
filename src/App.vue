@@ -1,12 +1,13 @@
 <script>
+import { checkForUpdate } from './utils/checkForUpdate'
+
 export default {
   onLaunch: function () {
     console.log('App Launch')
-    console.log('env', process.env.NODE_ENV)
-    console.log('url', process.env.VUE_APP_BASE_URL)
+    checkForUpdate() // 检测小程序是否更新
   },
   onShow: function () {
-    console.log('App Show1')
+    console.log('App Show')
   },
   onHide: function () {
     console.log('App Hide')

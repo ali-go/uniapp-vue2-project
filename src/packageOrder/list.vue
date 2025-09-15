@@ -3,7 +3,6 @@
     <image class="logo" src="/static/logo.png"></image>
     <view>
       <text class="title">{{ hello }}</text>
-      <button @click="handleClick">click</button>
     </view>
   </view>
 </template>
@@ -12,15 +11,11 @@
 export default {
   data() {
     return {
-      hello: 'Hello'
+      hello: 'order-list'
     }
   },
   onLoad() {},
-  methods: {
-    handleClick() {
-      uni.navigateTo({ url: '/packageOrder/list' })
-    }
-  }
+  methods: {}
 }
 </script>
 
